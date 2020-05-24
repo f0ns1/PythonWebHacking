@@ -13,8 +13,8 @@ def request(url, protocol):
 
 def extract_web_links(target_url, protocol):
     response = request(target_url, protocol)
-    #print("[+] web target ==> " + protocol + target_url)
-    #print(response)
+    print("[+] web target ==> " + protocol + target_url)
+    print(response)
     if response:
         return re.findall('(?:href=")(.*?)"', response.content)
     else:
@@ -32,7 +32,7 @@ def crawling_internal(target_url, protocol, list_discover_links):
             list_discover_links=crawling_internal(link.replace("https://", "").replace("http://",""), protocol, list_discover_links)
     return list_discover_links
 
-target_url ="yourwebsite"
+target_url ="youtwebsite"
 protocol ="https://"
 list_discover_links=[]
 
