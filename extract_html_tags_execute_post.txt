@@ -1,0 +1,11 @@
+http://10.0.9.6/mutillidae/index.php?page=dns-lookup.php
+	[+] post url ==> http://10.0.9.6/mutillidae/index.php?page=dns-lookup.php
+	[+] action ==> index.php?page=dns-lookup.php
+	[+] method type ==> post
+		 [+] form input input_name ==> target_host
+		 [+] form input  input_type ==> text
+		 [+] form input input_value ==> None
+		 [+] form input input_name ==> dns-lookup-php-submit-button
+		 [+] form input  input_type ==> submit
+		 [+] form input input_value ==> Lookup DNS
+<Response [200]>
