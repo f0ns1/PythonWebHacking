@@ -31,6 +31,6 @@ def check_subdomains(url, protocol):
 
 
 
-url="linkedin.com"
+url="yourwebsite"
 protocol="https://"
 check_subdomains(url, protocol)
