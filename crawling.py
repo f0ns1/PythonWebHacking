@@ -20,6 +20,10 @@ def check_directories(url, protocol):
 
 def check_subdomains(url, protocol):
     with open("Subdomain.txt", "r") as wordlist_file:
+        status = request(url, protocol)
+        if status:
+            print("\t [+] Discovered subdomain ==> " + protocol + url)
+            check_directories(url, protocol)
         for line in wordlist_file:
             test_url = line.strip() + "." + url
             print("[--] Test =" + test_url)
@@ -31,6 +35,6 @@ def check_subdomains(url, protocol):
 
 
 
-url="yourwebsite"
-protocol="https://"
+url="10.0.9.6"
+protocol="http://"
 check_subdomains(url, protocol)

@@ -32,8 +32,8 @@ def crawling_internal(target_url, protocol, list_discover_links):
             list_discover_links=crawling_internal(link.replace("https://", "").replace("http://",""), protocol, list_discover_links)
     return list_discover_links
 
-target_url =""
-protocol ="https://"
+target_url ="10.0.9.6"
+protocol ="http://"
 list_discover_links=[]
 
 list_discover_links = crawling_internal(target_url, protocol,list_discover_links)
