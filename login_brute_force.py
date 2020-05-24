@@ -3,7 +3,7 @@ import requests
 
 def login(user,password,url):
     data ={"username": user, "password": password, "Login":"submit" }
-    return requests.post(url, data=data, allow_redirects=True),
+    return requests.post(url, data=data, allow_redirects=True)
 
 
 error_login="Web page custom error login"
